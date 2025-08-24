@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Currículo - Vinicius</title>
+  <meta name="description" content="Currículo de Vinicius — Estudante de ADS com foco em Cibersegurança e Infraestrutura.">
+  <link rel="preload" as="image" href="vinicius.jpg">
+  <style>
+    :root {
+      --maxw: 940px;
+      --fg: #1e1e1e;
+      --muted: #666;
+      --accent: #0a66c2;
+      --bg: #ffffff;
+      --card: #f7f7f7;
+      --border: #e5e5e5;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+    }
+    header .top {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 16px;
+      align-items: center;
+    }
+    .avatar {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+    h1 {
+      margin: 0 0 4px 0;
+      font-size: 28px;
+      letter-spacing: 0.2px;
+    }
+    .tagline {
+      margin: 0 0 8px 0;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .contacts {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      font-size: 15px;
+    }
+    .contacts a { color: var(--accent); text-decoration: none; }
+    .contacts a:hover { text-decoration: underline; }
+    main { background: var(--bg); }
+    section { padding: 20px 0; border-bottom: 1px solid var(--border); }
+    section:last-of-type { border-bottom: none; }
+    h2 {
+      font-size: 18px;
+      margin: 0 0 10px 0;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0 0 20px; }
+    .skills, .certs { columns: 2; gap: 24px; }
+    .role { margin: 8px 0 0 0; }
+    .meta { color: var(--muted); font-size: 14px; margin-top: 2px; }
+    article { margin: 10px 0 14px 0; }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 12px;
+      color: var(--muted);
+      margin-left: 8px;
+    }
+    footer {
+      background: var(--card);
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--muted);
+    }
+    @media (max-width: 640px) {
+      header .top { grid-template-columns: 1fr; }
+      .avatar { width: 110px; height: 110px; }
+      .skills, .certs { columns: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header class="container" role="banner">
+    <div class="top">
+      <!-- Coloque sua foto (JPG ou PNG) com o nome 'vinicius.jpg' na MESMA pasta deste arquivo.
+           Dica: use uma imagem quadrada para melhor encaixe. -->
+      <img src="foto.jpg.png" alt="Foto de perfil de Vinicius" class="avatar" width="140" height="140" loading="lazy" onerror="this.style.display='none'">
+      <div>
+        <h1>Vinicius</h1>
+        <p class="tagline">Estudante de Tecnologia (ADS) | Foco: Cibersegurança & Infraestrutura</p>
+        <ul class="contacts" aria-label="Contatos">
+          <li><a href="mailto:vinicios9497@hotmail.com">vinicios9497@hotmail.com</a></li>
+          <li><a href="www.linkedin.com/in/viniciusoliveira1s" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/viniciusoliveira1s
+
+</a></li>
+          <li>São Paulo, SP</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <section aria-labelledby="resumo">
+      <h2 id="resumo">Resumo Executivo</h2>
+      <p>
+        Profissional em transição para TI com background disciplinado no Exército Brasileiro e vivência administrativa/financeira.
+        Foco em fundamentos de Segurança da Informação, suporte técnico e operações. Busca estágio para ganho de tração prática
+        enquanto curso Análise e Desenvolvimento de Sistemas pela Universidade Presbiteriana Mackenzie.
+      </p>
+    </section>
+
+    <section aria-labelledby="competencias">
+      <h2 id="competencias">Competências-Chave</h2>
+      <ul class="skills">
+        <li>HTML5 (nível inicial)</li>
+        <li>Fundamentos de Cibersegurança & Resposta a Incidentes</li>
+        <li>Gestão de documentos sigilosos & Compliance</li>
+        <li>Atendimento, suporte e operação sob pressão</li>
+        <li>Raciocínio analítico, organização e disciplina</li>
+        <li>Espanhol básico</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="formacao">
+      <h2 id="formacao">Formação</h2>
+      <article>
+        <strong>Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas</strong>
+        <span class="badge">EAD</span>
+        <div class="meta">Universidade Presbiteriana Mackenzie — Ago/2025 a Dez/2027</div>
+        <div>
+          <a href="https://www.mackenzie.br" target="_blank" rel="noopener noreferrer">Visitar site da universidade</a>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="experiencia">
+      <h2 id="experiencia">Experiência</h2>
+
+      <article>
+        <strong>Exército Brasileiro — Soldado (2ª Região Militar & CMSE)</strong>
+        <div class="meta">Mar/2017 — Abr/2020 · São Paulo, SP</div>
+        <ul class="role">
+          <li>Condução e manutenção básica de viaturas; logística e apoio administrativo.</li>
+          <li>Transporte de autoridades, rotas seguras, protocolos e confidencialidade.</li>
+          <li>Entrega de documentos sensíveis; direção defensiva e segurança de comboios.</li>
+        </ul>
+      </article>
+
+      <article>
+        <strong>Consórcio Remaza — Auxiliar Administrativo</strong>
+        <div class="meta">Abr/2022 — Out/2022 · São Paulo, SP</div>
+        <ul class="role">
+          <li>Gestão e arquivamento de documentos sigilosos com foco em compliance.</li>
+          <li>Suporte a auditorias internas e controle de fluxo físico/digital.</li>
+        </ul>
+      </article>
+
+      <article>
+        <strong>Genoa / LPCM — Assistente Administrativo Financeiro</strong>
+        <div class="meta">Mai/2023 — Out/2023 · São Paulo, SP</div>
+        <ul class="role">
+          <li>Controle de documentos financeiros e apoio a fechamentos contábeis.</li>
+          <li>Confiabilidade de dados e aderência a normas fiscais e auditoria.</li>
+        </ul>
+      </article>
+
+      <article>
+        <strong>Motorista por Aplicativo — Autônomo</strong>
+        <div class="meta">Nov/2023 — Dez/2024 · São Paulo e região</div>
+        <ul class="role">
+          <li>Operação com plataformas digitais, análise de rotas e segurança operacional.</li>
+          <li>Gestão autônoma de tempo e atendimento ao cliente sob cenários adversos.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="certificacoes">
+      <h2 id="certificacoes">Certificações & Cursos Selecionados</h2>
+      <ul class="certs">
+        <li>IA para Cibersegurança — LinkedIn Learning (2025)</li>
+        <li>Cibersegurança para Líderes — LinkedIn Learning (2025)</li>
+        <li>Segurança em TI — Fundação Bradesco (2025)</li>
+        <li>Projetos de Sistemas de TI — Fundação Bradesco (2025)</li>
+        <li>IA Generativa — Santander Open Academy / MIT PE (2025)</li>
+        <li>Fundamentos de TI: Hardware e Software — Fundação Bradesco (2025)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container" role="contentinfo">
+    <p>Última atualização: 15/08/2025</p>
+  </footer>
+</body>
+</html>
